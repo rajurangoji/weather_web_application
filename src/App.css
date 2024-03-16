@@ -78,7 +78,8 @@ body {
   border-radius: 30px;
   box-shadow: 5px 5px 5px black;
   border: 0.1px solid black;
-  background: linear-gradient(to bottom right, #ffffff 5%, #a4a3a3bc 100%);
+  /* background: linear-gradient(to bottom right, #ffffff 1%, #4093d798 70%); */
+  /* background-color: #cba706a7; */
   font-size: 50px;
   font-weight: 700;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serifx;
@@ -96,7 +97,7 @@ body {
   border-radius: 30px;
   box-shadow: 5px 5px 5px black;
   border: 0.1px solid black;
-  background: linear-gradient(to bottom right, #ffffff 1%, #a4a3a3bc 70%);
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,7 +128,7 @@ body {
 .weather-box .weather p {
   font-size: 30px;
 }
-.sunny{
+.sunny {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,7 +137,7 @@ body {
   font-size: 20px;
   border-left: 0.1px solid black;
 }
-.humidity{
+.humidity {
   border-left: 0.5px solid black;
   width: 33%;
   display: flex;
@@ -144,7 +145,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-.humidity div{
+.humidity div {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -152,8 +153,7 @@ body {
   justify-content: center;
   font-size: 22px;
 }
-.humidity div p{
+.humidity div p {
   font-size: 33px;
   color: #1a1a1a;
 }
-

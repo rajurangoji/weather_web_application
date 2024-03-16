@@ -1,9 +1,8 @@
 import React, { useState, useEffect, memo } from 'react';
 
 function Location(props) {
-  const { searchData } = props;
+  const { searchData ,backgroundColor} = props;
   const [formattedDate, setFormattedDate] = useState('');
-
   useEffect(() => {
     const currentDate = new Date();
     const day = currentDate.getDate();
@@ -25,7 +24,7 @@ function Location(props) {
   }
 
   return (
-    <div className='location-container'>
+    <div className='location-container' style={{backgroundColor}}>
       <div>{searchData.name}</div>
       <p>{formattedDate}</p>
     </div>

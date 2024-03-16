@@ -1,20 +1,32 @@
-import React, { memo } from 'react'
+import React, { memo } from 'react';
 
 function WeatherReport(props) {
-  const { searchData } = props;
+  const { searchData, backgroundColor } = props;
 
   if (!searchData) {
-    return <div></div>
+    return <div></div>;
   }
 
+  // Calculate temperature in Celsius
+  const temperatureCelsius = Math.floor(searchData.main.temp - 273.15);
+
+  // Set background color based on temperature
+  // let backgroundColor;
+  // if (temperatureCelsius > 30) {
+  //   backgroundColor = 'orange';
+  // } else if (temperatureCelsius >= 15 && temperatureCelsius <= 30) {
+  //   backgroundColor = 'red';
+  // } else {
+  //   backgroundColor = 'skyblue';
+  // }
+
   return (
-    <div className='weather-report-container'>
+    <div className='weather-report-container' style={{ backgroundColor }}>
       <h1>Weather Report</h1>
       <div className='weather-box'>
         <div className='weather'>
-          <h1>{Math.floor(searchData.main.temp - 273.15)}<sup>∘</sup>C | {Math.floor((searchData.main.temp - 273.15) * 9 / 5 + 32)}<sup>∘</sup>F</h1>
+          <h1>{temperatureCelsius}<sup>∘</sup>C | {Math.floor((searchData.main.temp - 273.15) * 9 / 5 + 32)}<sup>∘</sup>F</h1>
           <p>Feels Like : {Math.floor(searchData.main.feels_like - 273.15)}<sup>∘</sup>C</p>
-
         </div>
         <div className='sunny'>
           <h1>{searchData.weather[0].description}</h1>
@@ -27,7 +39,7 @@ function WeatherReport(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default memo(WeatherReport)
+export default memo(WeatherReport);
