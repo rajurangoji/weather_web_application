@@ -1,0 +1,159 @@
+body {
+  background: linear-gradient(to right, #bdc3c7 0%, #2c3e50af 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input-container input {
+  background-color: #d9d9d9;
+  outline: none;
+  width: 700px;
+  height: 62px;
+  border-radius: 30px;
+  border: 0.1px solid black;
+  text-indent: 30px;
+  font-size: 28px;
+  box-shadow: 0px 0px 10p #d9d9d9;
+  margin: 20px;
+}
+
+.button {
+  background-color: #000000;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  outline: none;
+  padding: 14px 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+::placeholder {
+  color: #2c3e5063;
+}
+
+.report-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.location-container {
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px black;
+  border: 0.1px solid black;
+  background: linear-gradient(to bottom right, #ffffff 5%, #a4a3a3bc 100%);
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serifx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  color: #000000;
+}
+.weather-report-container {
+  width: 800px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px black;
+  border: 0.1px solid black;
+  background: linear-gradient(to bottom right, #ffffff 1%, #a4a3a3bc 70%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.weather-box {
+  width: 100%;
+  height: 80%;
+  /* background-color: red; */
+  display: flex;
+  padding: 5px;
+}
+
+.weather-box .weather {
+  width: 33%;
+  /* background-color: #dad6d6; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.weather-box .weather h1 {
+  font-size: 50px;
+}
+
+.weather-box .weather p {
+  font-size: 30px;
+}
+.sunny{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  text-align: center;
+  font-size: 20px;
+  border-left: 0.1px solid black;
+}
+.humidity{
+  border-left: 0.5px solid black;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.humidity div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+.humidity div p{
+  font-size: 33px;
+  color: #1a1a1a;
+}
+
