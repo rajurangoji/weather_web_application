@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import Location from './Location';
-import WeatherReport from '../WeatherReport';
+import WeatherReport from './WeatherReport';
 
 function App() {
   const [cityName, setCityName] = useState('');
