@@ -10,16 +10,6 @@ function WeatherReport(props) {
   // Calculate temperature in Celsius
   const temperatureCelsius = Math.floor(searchData.main.temp - 273.15);
 
-  // Set background color based on temperature
-  // let backgroundColor;
-  // if (temperatureCelsius > 30) {
-  //   backgroundColor = 'orange';
-  // } else if (temperatureCelsius >= 15 && temperatureCelsius <= 30) {
-  //   backgroundColor = 'red';
-  // } else {
-  //   backgroundColor = 'skyblue';
-  // }
-
   return (
     <div className='weather-report-container' style={{ backgroundColor }}>
       <h1>Weather Report</h1>

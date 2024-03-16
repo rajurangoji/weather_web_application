@@ -32,7 +32,7 @@ function App() {
     if (searchData && searchData.main) { // Check if searchData and searchData.main exist
       // Calculate temperature in Celsius
       let temperatureCelsius = Math.floor(searchData.main.temp - 273.15);
-      console.log(temperatureCelsius)
+      // console.log(temperatureCelsius)
       // Set background color based on temperature
       if (temperatureCelsius > 30) {
         setBackgroundColor('orange');
